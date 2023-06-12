@@ -1,0 +1,10 @@
+div {
+    display: flex;
+    width: 100px;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.fiveStar {
+    padding-left: 4px;
+    color: #ffc007;
+}

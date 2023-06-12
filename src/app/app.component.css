@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#head {
+    width: 1240px;
+    margin: 25px auto;
+}
+#head div {
+    display: inline-block;
+    
+}
+#head h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#unidade, #profissional {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#profissional{
+    margin-left: 20px;
+    border: none;
+    background-color: #EFF0F4;
+    border-radius: 5px;
+}
+#unidade {
+  border: 1px solid silver;  
+}
+#esteMes {
+    position: absolute;
+    top: 88px;
+    right: 362px;
+    width: 300px;
+    display: flex;
+}
+#filtroDesk {
+    width: 300px;
+    height: 40px;
+    text-align: start;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+#esteMes p {
+    position: absolute;
+    top: -24px;
+    right: 258px;
+}
+.profDiv p {
+    position: absolute;
+    top: 65px;
+    left: 492px;
+}
+/*Grafico*/
+#graphic-base {
+    width: 1240px;
+    margin: auto;
+    border: 1px solid silver;
+    padding: 30px 0 0 30px;
+    border-radius: 5px;
+    height: 470px;
+}
+#graphic-base div {
+    display: inline-block;
+}
+.graphic {
+    position: relative;
+    top: -137px;
+    width: 850px;
+    left: 40px;
+}
+
+/*Footer*/
+#footer {
+    width: 1240px;
+    height: 200px;
+    margin: 30px auto;
+    border: 1px solid silver;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+#footer table {
+    width: 100%;
+    height: 200px;
+}
+#footer table tr th,td{
+    padding-left:25px;
+    height: 50px;
+    border-bottom: 1px solid silver;
+}
+.listOne:hover, .listTwo:hover, .listThree:hover {
+    background-color: #EFF0F4;
+}
+.td-avaliacao {
+    display: flex;
+    padding: 17px;
+}
+
+/*Formulario ao lado do graphic*/
+
+#graphic-avaliacao h1{
+    font-size: 20px;
+    border-bottom: 1px solid silver;
+    padding-bottom: 15px;
+}
+.formularioVertical tr th{
+    display: flex;
+}
+.avaliacaoVertical {
+    width: 250px;
+    height: 55px;
+    display: flex;
+    border-bottom: 1px solid silver;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+/*Mobile*/
+#headMobile {
+    display: none;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+}
+#headMobile div {
+    display: inline-block;
+}
+.headh1 h1 {
+    font-size: 25px;
+    margin-right: 202px;
+    margin-left: 15px;
+}
+.headInput input {
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: -20px;
+}
+.headInput svg {
+    position: absolute;
+    top: 40px;
+    right: 45px;
+}
+.headInput p {
+    position: absolute;
+    top: 40px;
+    right: 22px;
+    border-radius: 50px;
+    background-color: #4D3EF3;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    color: white;
+    padding-left: 6px;
+}
+/*Footer Mobile*/
+.footerMobile {
+    display: none;
+    width: 385px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid silver;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+.footerMobile table {
+    width: 100%;
+}
+.footerMobile table tr th{
+    height: 50px;
+    text-align: start;
+    padding-left: 25px;
+}
+.footerMobile table tr td {
+    text-align: start;
+
+}
+/*Filtro Mobile Aberto */
+#filterMob {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.openMobile {
+    display: flex;
+}
+.openMobile h1 {
+    font-size: 30px;
+    margin: 30px 15px 0 15px;
+}
+.openMobile p {
+    margin-top: 40px;
+    border-radius: 50px;
+    background-color: #4D3EF3;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    color: white;
+    padding-left: 7px;
+}
+.openMobile svg {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}
+.menuFiltroM {
+    display: flex;
+    flex-direction: column;
+}
+.menuFiltroM label{
+    margin-top: 25px;
+    padding-left: 15px;
+}
+#mobile-unidades {
+    border: 1px solid silver;
+    background-color: white;
+}
+#mobile-notas,#mobile-profissionais {
+    border-color: transparent;
+}
+#mobile-unidades, #mobile-notas,#mobile-profissionais {
+    width: 380px;
+    height: 45px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin: 5px auto;
+    padding-left: 15px;
+}
+.lavMobUni {
+    margin-top: 15px;
+}
+.exitMobile input {
+    width: 100px;
+    height: 50px;
+    background-color: #00D092;
+    color: white;
+    border-radius: 8px;
+    border-color: transparent;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+@media(max-width:1600px) {
+    #esteMes {
+        right: 470px;
+    }
+}
+@media(max-width:1440px) {
+    #esteMes {
+        right: 400px;
+    }
+    .profDiv p {
+        left: 420px;
+    }
+}
+@media(max-width:1366px) {
+    #esteMes {
+        right: 360px;
+    }
+    .profDiv p {
+        left: 383px;
+    }
+} 
+@media(max-width:1024px) {
+    #footer, #graphic-base, #head {
+        width: 900px;
+    }
+    .graphic {
+        left: 15px;
+        width: 550px;
+    }
+    #unidade, #profissional {
+        padding-left: 30px;
+    }
+}
+@media(max-width:768px) {
+    #head {
+        width: 90%;
+    }
+    #graphic-base {
+        width: 90%;
+    }
+    .graphic {
+        width: 400px;
+        margin-left: -20px;
+    }
+    #footer {
+        width: 90%;
+    }
+    #profissional, #unidade {
+        width: 200px;
+        padding-left: 5px;
+    }
+    .profDiv p {
+        left: 258px;
+    }
+    #esteMes {
+        right: 140px;
+        width: 150px;
+    }
+    #esteMes p {
+        right: 110px;
+    }
+    #filtroDesk {
+        width: 200px;
+        padding-left: 5px;
+    }
+}
+@media(max-width:424px) {
+    #headMobile {
+        display: block;
+        margin-top: 15px;
+    }
+    #footer {
+        display: none;
+    }
+    #head {
+        display: none;
+    }
+    .graphic {
+        width: 210px;
+        margin-left: -20px;
+        top: -135px;
+    }
+    .avaliacaoVertical {
+        width: 150px;
+    }
+    #graphic-base {
+        padding: 30px 0 0 20px;
+        width: 385px;
+    }
+    .footerMobile {
+        display: block;
+    }
+    .headh1 h1 {
+        margin-right: 200px;
+        margin-left: 18px;
+    }
+    .headInput svg {
+        right: 50px;
+    }
+    .headInput p {
+        right: 25px;
+    }
+}
+@media(max-width:390px) {
+    .headh1 h1 {
+        margin-right: 172px;
+    }
+    #graphic-base {
+        width: 350px;
+    }
+    .graphic {
+        width: 180px;
+    }
+    .footerMobile {
+        width: 350px;
+    } 
+    .headInput svg {
+        right: 55px;
+    }
+    .headInput p {
+        right: 30px;
+    }
+}
+@media(max-width:375px) {
+    .headh1 h1 {
+        margin-right: 164px;
+    }
+    #graphic-base {
+        width: 350px;
+    }
+    .graphic {
+        width: 180px;
+    }
+    .footerMobile {
+        width: 350px;
+    } 
+    .headInput svg {
+        right: 45px;
+    }
+    .headInput p {
+        right: 20px;
+    }
+}

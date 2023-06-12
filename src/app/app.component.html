@@ -1,0 +1,167 @@
+
+<!--Mobile head-->
+<section id="headMobile">
+    <div class="headh1">
+      <h1>Avaliações</h1>
+    </div>
+    <div class="headInput">
+      <input (click)="abrirMobile()" type="button" value="">
+      <svg (click)="abrirMobile()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+      </svg>
+      <p (click)="abrirMobile()">{{notificacaoFilter}}</p>
+    </div>
+  </section>
+  
+  <!-- Filtro Mobile Aberto -->
+  <section *ngIf="show" id="filterMob">
+    <div class="openMobile">
+  
+      <h1>Filtros</h1>
+      <p>{{notificacaoFilter}}</p>
+        <svg (click)="abrirMobile()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        </svg>
+    </div>
+    <div class="menuFiltroM">
+      <label class="labMobUni" for="">Unidades</label>
+      <select name="" id="mobile-unidades">
+        <option (click)="unidade()" value="">NOVO ELDORADO</option>
+        <option value="">SAVASSI</option>
+        <input type="button" value="">
+      </select>
+  
+      <label class="labMobPro" for="">Profissionais</label>
+      <select name="" id="mobile-profissionais">
+        <option value="">Natalisson</option>
+        <option value="">Cris</option>
+        <input type="button" value="">
+      </select>
+  
+      <label class="labMobNot" for="">Nota</label>
+      <select name="" id="mobile-notas">
+        <option value="">Todas</option>
+        <option value="">{{outros.avaliacao[4]}}</option>
+        <option value="">{{outros.avaliacao[3]}}</option>
+        <option value="">{{outros.avaliacao[2]}}</option>
+        <option value="">{{outros.avaliacao[1]}}</option>
+        <option value="">{{outros.avaliacao[0]}}</option>
+        <input type="button" value="">
+      </select>
+  
+      <div class="exitMobile">
+        <input type="button" value="Filtrar">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Head -->
+  <section id="head">
+    <h1>Avaliações</h1>
+    <p>Unidades</p>
+  
+    <div>
+      <select name="" id="unidade">
+        <option value="">NOVO ELDORADO</option>
+        <option value="">SAVASSI</option>
+        <input type="button" value="">
+      </select>
+    </div>
+  
+    <div class="profDiv">
+      <p>Profissionais</p>
+      <select name="" id="profissional">
+        <option value="">Natalisson</option>
+        <option value="">Cris</option>
+        <input type="button" value="">
+      </select>
+    </div>
+  
+      
+    <div id="esteMes">
+      <p>Notas</p>
+      <select name="" id="filtroDesk">
+        <option value="">Todas</option>
+        <option value="">{{outros.avaliacao[4]}}</option>
+        <option value="">{{outros.avaliacao[3]}}</option>
+        <option value="">{{outros.avaliacao[2]}}</option>
+        <option value="">{{outros.avaliacao[1]}}</option>
+        <option value="">{{outros.avaliacao[0]}}</option>
+        <input type="button" value="">
+      </select>
+    </div>
+  </section>
+  
+  
+  <section id="graphic-base">
+    <!-- Avaliações ao lado do grafico-->
+    <div id="graphic-avaliacao">
+      <h1>Avaliações {{outros.total}}</h1>
+      <p class="avaliacaoVertical">{{outros.avaliacao[4]}}
+        <app-star></app-star>
+      </p>
+      <p class="avaliacaoVertical">{{outros.avaliacao[3]}}
+        <app-star></app-star>
+      </p>
+      <p class="avaliacaoVertical">{{outros.avaliacao[2]}}
+        <app-star></app-star>
+      </p>
+      <p class="avaliacaoVertical">{{outros.avaliacao[1]}}
+        <app-star></app-star>
+      </p>
+      <p class="avaliacaoVertical">{{outros.avaliacao[0]}}
+        <app-star></app-star>
+      </p>
+      <p class="avaliacaoVertical">Não avaliaram</p>
+    </div>
+  
+    <!--Grafico-->
+    <div class="graphic">
+      <apx-chart
+        [series]="chartOptions.series!"
+        [chart]="chartOptions.chart!"
+        [dataLabels]="chartOptions.dataLabels!"
+        [plotOptions]="chartOptions.plotOptions!"
+        [xaxis]="chartOptions.xaxis!"
+      ></apx-chart>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <section id="footer">
+    <table>
+      <tr class="listZero">
+        <th>Contato</th>
+        <th>Avaliação</th>
+        <th>Comentário</th>
+        <th>Profissional</th>
+        <th>Serviço</th>
+        <th>Unidade</th>
+      </tr>
+      <tr *ngFor="let cadastro of cadastros">
+        <td>{{cadastro.name}}</td>
+        <td style="display: flex; padding-top: 12px;">{{cadastro.avaliacao}} <app-star></app-star></td>
+        <td>{{cadastro.comentario}}</td>
+        <td>{{cadastro.profissional}}</td>
+        <td>{{cadastro.servico}}</td>
+        <td>{{cadastro.unidade}}</td>
+      </tr>
+    </table>
+  </section>
+  
+  <!--Mobile footer-->
+  
+  <section class="footerMobile">
+    <table>
+      <tr>
+        <th>Contato</th>
+        <th>Serviço</th>
+        <th>Avaliação</th>
+      </tr>
+      <tr *ngFor="let cadastro of cadastros" style="margin-top: 25px; border-top: 1px solid silver;">
+        <td>{{cadastro.name}}</td>
+        <td>{{cadastro.servico}}</td>
+        <td style="display: flex; padding-top: 12px; border-bottom: none;">{{cadastro.avaliacao}} <app-star></app-star></td>
+      </tr>
+    </table>
+  </section>
