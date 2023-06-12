@@ -393,4 +393,7 @@
     .headInput p {
         right: 20px;
     }
+    #mobile-unidades, #mobile-profissionais, #mobile-notas {
+        width: 350px;
+    }
 }
