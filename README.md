@@ -1,27 +1,30 @@
-# MyProject
+# Review Page
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm install`.
+Run ``ng serve --port 8080 --host 0.0.0.0`
 
-## Code scaffolding
+##Descrição
+Pagina de avaliação usando apexchats no angular e bootstrap 5.3;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Responsive
+1600px
+1440px
+1366px
+768px
+424px
+390px
+375px
 
-## Build
+## Desktop
+![Desktop](https://github.com/jonatasemoreira/GraphicPro/assets/129689207/8ec11639-bfb9-4904-b8dd-9c87125e0568)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Mobile
+![Mobile](https://github.com/jonatasemoreira/GraphicPro/assets/129689207/61903d1a-179c-4fe0-b3b2-7124aca21d67)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Copyright 2023
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
