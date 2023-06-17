@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
-## Development server
+# Development server
 
 Run `npm install`.
 Run ``ng serve --port 8080 --host 0.0.0.0`
@@ -10,7 +10,7 @@ Run ``ng serve --port 8080 --host 0.0.0.0`
 ##Descrição
 Pagina de avaliação usando apexchats no angular e bootstrap 5.3;
 
-##Responsive
+#Responsive
 1600px
 1440px
 1366px
@@ -19,12 +19,14 @@ Pagina de avaliação usando apexchats no angular e bootstrap 5.3;
 390px
 375px
 
-## Desktop
+# Desktop
 ![Desktop](https://github.com/jonatasemoreira/GraphicPro/assets/129689207/8ec11639-bfb9-4904-b8dd-9c87125e0568)
 
-## Mobile
+# Mobile
 ![Mobile](https://github.com/jonatasemoreira/GraphicPro/assets/129689207/61903d1a-179c-4fe0-b3b2-7124aca21d67)
 
+# Mobile Filtro
+![Screenshot_20230617_112554_Chrome](https://github.com/jonatasemoreira/GraphicPro/assets/129689207/ab0384f1-61e8-4a2d-ba68-19c63d20a4d1)
 
-## Copyright 2023
+# Copyright 2023
 
