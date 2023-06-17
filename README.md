@@ -26,7 +26,8 @@ Pagina de avaliação usando apexchats no angular e bootstrap 5.3;
 ![Mobile](https://github.com/jonatasemoreira/GraphicPro/assets/129689207/61903d1a-179c-4fe0-b3b2-7124aca21d67)
 
 # Mobile Filtro
-![Screenshot_20230617_112554_Chrome](https://github.com/jonatasemoreira/GraphicPro/assets/129689207/ab0384f1-61e8-4a2d-ba68-19c63d20a4d1)
+![Screenshot_20230617_112554_Chrome](https://github.com/jonatasemoreira/GraphicPro/assets/129689207/db963ce8-6b4b-470d-b410-0a623b16af0f)
+
 
 # Copyright 2023
 
